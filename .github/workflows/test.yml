@@ -25,7 +25,7 @@ jobs:
       default-matrix: ${{ steps.test-defaults.outputs.matrix }}
       inputs-matrix: ${{ steps.test-inputs.outputs.matrix }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v6
 
       - name: Get all files
         id: files
